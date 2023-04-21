@@ -1,29 +1,29 @@
 
-# Kisdoktori generátor
+# Inofkommunikációs szolgáltató web alkalmazás
 
 ## Feladat [2-3 mondat]
 
-Egy olyan alkalmazás készítése, mely törzsanyagokból disszertációt állít elő. Törzsanyagokat lehet felvinni a rendszerbe, egy szerkesztőfelületen megadni a generálás paramétereit, majd a generált dokumentumot különböző formátumokba menteni.
+Egy infokommunikációs szolgáltató web alkalmazásának az elkészítése. A felhasználóknak van lehetősége a szolgáltató által biztosított szolgáltatásokat vagy termékeket igénybe venni.
 
 ## A kisháziban elérhető funkciók [adatmódosítással járó is legyen benne]
-- törzsanyagok feltöltése (csak .txt formátumban), törlése - a törzsanyag témája megadható.
-- egyszerű szerkesztőfelület - téma megadása, elvárt szószám
-- egyszerű generálás - a téma alapján szövegek összeválogatása véletlenszerűen
-- mentés XML formátumban, az egyes szövegrészekhez megadva, hogy melyik forrásműből származnak
-- az előbbi XML betöltése és tartalmának megjelenítése (az egyes szövegrészekhez jelenjen meg, hogy melyik forrásműből való)
+- Szolgáltatói admin jogosultsággal:
+      - Az admin létre tud hozni új szolgáltatásokat.
+      - Az admin bővítheti a termékeket.
+- Felhasználó jogosultsággal:
+      - A felhasználó böngészhet a meglévő szolgáltatások és termékek között.
+      - Feliratkozhat új szolgáltatásra.
+      - Megváltoztathatja az adatait.
+      - Rendelhet termékeket.
 
 ## Adatbázis entitások [min. 3 db.]
-- törzsanyag
-- dolgozat
-- forráshivatkozás
+- Szolgáltatások
+- Termékek
+- SzolgáltatásKatergóriák
+- TermékKategóriák
 
 ## Alkalmazott alaptechnológiák [a szerver oldal mindenkinek ugyanez lesz, kliensoldal választható. Verziószámok lehtnek nagyobbak, mint a lentiek]
 - adatelérés: Entity Framework Core v6
 - kommunikáció, szerveroldal: ASP.NET Core v6
-- kliensoldal: Blazor WebAssembly
+- kliensoldal: Angular
 
 ## Továbbfejlesztési tervek [opcionális, a pontrendszerből érdemes válogatni. Célja, hogy KHF bemutatáskor a felmerülő kérdéseket megbeszélhessük]
-- hosztolás Azure-ban
-- HiLo elsődleges kulcs alkalmazása
-- logikai törlés (soft delete) globális szűrőkkel
-- OData szolgáltatás megvalósítása
